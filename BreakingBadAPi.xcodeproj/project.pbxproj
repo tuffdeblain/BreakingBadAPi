@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		168CD4427660A64789DF62C4 /* Pods_BreakingBadAPi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C60D91EE711052EFEA73E17 /* Pods_BreakingBadAPi.framework */; };
+		C503C2AB26D00E0300649F4F /* HeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503C2AA26D00E0300649F4F /* HeroesViewController.swift */; };
+		C503C2AE26D00E5A00649F4F /* HeroesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503C2AD26D00E5A00649F4F /* HeroesViewCell.swift */; };
 		C52421CB26CECF2500C44C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52421CA26CECF2500C44C56 /* AppDelegate.swift */; };
 		C52421CD26CECF2500C44C56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52421CC26CECF2500C44C56 /* SceneDelegate.swift */; };
 		C52421CF26CECF2500C44C56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52421CE26CECF2500C44C56 /* ViewController.swift */; };
@@ -14,9 +17,14 @@
 		C52421D526CECF2500C44C56 /* BreakingBadAPi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C52421D326CECF2500C44C56 /* BreakingBadAPi.xcdatamodeld */; };
 		C52421D726CECF2700C44C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52421D626CECF2700C44C56 /* Assets.xcassets */; };
 		C52421DA26CECF2700C44C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52421D826CECF2700C44C56 /* LaunchScreen.storyboard */; };
+		C52421E726CECFD300C44C56 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52421E626CECFD300C44C56 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C60D91EE711052EFEA73E17 /* Pods_BreakingBadAPi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakingBadAPi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC98209CF6D71DFF9C441794 /* Pods-BreakingBadAPi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadAPi.release.xcconfig"; path = "Target Support Files/Pods-BreakingBadAPi/Pods-BreakingBadAPi.release.xcconfig"; sourceTree = "<group>"; };
+		C503C2AA26D00E0300649F4F /* HeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewController.swift; sourceTree = "<group>"; };
+		C503C2AD26D00E5A00649F4F /* HeroesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewCell.swift; sourceTree = "<group>"; };
 		C52421C726CECF2500C44C56 /* BreakingBadAPi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBadAPi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52421CA26CECF2500C44C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C52421CC26CECF2500C44C56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +34,8 @@
 		C52421D626CECF2700C44C56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C52421D926CECF2700C44C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C52421DB26CECF2700C44C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C52421E626CECFD300C44C56 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E5D1ACDA62E0A2DF14A7F90D /* Pods-BreakingBadAPi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBadAPi.debug.xcconfig"; path = "Target Support Files/Pods-BreakingBadAPi/Pods-BreakingBadAPi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168CD4427660A64789DF62C4 /* Pods_BreakingBadAPi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C503C2AC26D00E3300649F4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C503C2AD26D00E5A00649F4F /* HeroesViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C503C2B026D1752F00649F4F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		C52421BE26CECF2500C44C56 = {
 			isa = PBXGroup;
 			children = (
 				C52421C926CECF2500C44C56 /* BreakingBadAPi */,
 				C52421C826CECF2500C44C56 /* Products */,
+				F056DCCD8E609E616362BC61 /* Pods */,
+				F785BC6D9CFB7F89F9BDB5DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +86,77 @@
 		C52421C926CECF2500C44C56 /* BreakingBadAPi */ = {
 			isa = PBXGroup;
 			children = (
-				C52421CA26CECF2500C44C56 /* AppDelegate.swift */,
-				C52421CC26CECF2500C44C56 /* SceneDelegate.swift */,
-				C52421CE26CECF2500C44C56 /* ViewController.swift */,
-				C52421D026CECF2500C44C56 /* Main.storyboard */,
-				C52421D626CECF2700C44C56 /* Assets.xcassets */,
-				C52421D826CECF2700C44C56 /* LaunchScreen.storyboard */,
-				C52421DB26CECF2700C44C56 /* Info.plist */,
+				C52421E526CECFB900C44C56 /* Models */,
+				C503C2AC26D00E3300649F4F /* View */,
+				C52421E226CECF7700C44C56 /* Controllers */,
+				C52421E326CECF8600C44C56 /* StoryBoards */,
+				C503C2B026D1752F00649F4F /* Managers */,
+				C52421E126CECF5700C44C56 /* Services */,
+				C52421E426CECF9200C44C56 /* Resources */,
 				C52421D326CECF2500C44C56 /* BreakingBadAPi.xcdatamodeld */,
 			);
 			path = BreakingBadAPi;
+			sourceTree = "<group>";
+		};
+		C52421E126CECF5700C44C56 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C52421CA26CECF2500C44C56 /* AppDelegate.swift */,
+				C52421CC26CECF2500C44C56 /* SceneDelegate.swift */,
+				C52421DB26CECF2700C44C56 /* Info.plist */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C52421E226CECF7700C44C56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C52421CE26CECF2500C44C56 /* ViewController.swift */,
+				C503C2AA26D00E0300649F4F /* HeroesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C52421E326CECF8600C44C56 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				C52421D026CECF2500C44C56 /* Main.storyboard */,
+				C52421D826CECF2700C44C56 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		C52421E426CECF9200C44C56 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C52421D626CECF2700C44C56 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C52421E526CECFB900C44C56 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C52421E626CECFD300C44C56 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F056DCCD8E609E616362BC61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5D1ACDA62E0A2DF14A7F90D /* Pods-BreakingBadAPi.debug.xcconfig */,
+				AC98209CF6D71DFF9C441794 /* Pods-BreakingBadAPi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F785BC6D9CFB7F89F9BDB5DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C60D91EE711052EFEA73E17 /* Pods_BreakingBadAPi.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C52421DE26CECF2700C44C56 /* Build configuration list for PBXNativeTarget "BreakingBadAPi" */;
 			buildPhases = (
+				AEECA7DC4EB07F8CADDA3F7D /* [CP] Check Pods Manifest.lock */,
 				C52421C326CECF2500C44C56 /* Sources */,
 				C52421C426CECF2500C44C56 /* Frameworks */,
 				C52421C526CECF2500C44C56 /* Resources */,
+				B967645CB903C6B5D5A9A448 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,11 +226,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AEECA7DC4EB07F8CADDA3F7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BreakingBadAPi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B967645CB903C6B5D5A9A448 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBadAPi/Pods-BreakingBadAPi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBadAPi/Pods-BreakingBadAPi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BreakingBadAPi/Pods-BreakingBadAPi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C52421C326CECF2500C44C56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C503C2AB26D00E0300649F4F /* HeroesViewController.swift in Sources */,
+				C52421E726CECFD300C44C56 /* Model.swift in Sources */,
+				C503C2AE26D00E5A00649F4F /* HeroesViewCell.swift in Sources */,
 				C52421CF26CECF2500C44C56 /* ViewController.swift in Sources */,
 				C52421CB26CECF2500C44C56 /* AppDelegate.swift in Sources */,
 				C52421CD26CECF2500C44C56 /* SceneDelegate.swift in Sources */,
@@ -287,12 +423,13 @@
 		};
 		C52421DF26CECF2700C44C56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5D1ACDA62E0A2DF14A7F90D /* Pods-BreakingBadAPi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 754D6797UK;
-				INFOPLIST_FILE = BreakingBadAPi/Info.plist;
+				INFOPLIST_FILE = BreakingBadAPi/Services/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,18 +437,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sergeiKudinov.BreakingBadAPi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C52421E026CECF2700C44C56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC98209CF6D71DFF9C441794 /* Pods-BreakingBadAPi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 754D6797UK;
-				INFOPLIST_FILE = BreakingBadAPi/Info.plist;
+				INFOPLIST_FILE = BreakingBadAPi/Services/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = sergeiKudinov.BreakingBadAPi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
